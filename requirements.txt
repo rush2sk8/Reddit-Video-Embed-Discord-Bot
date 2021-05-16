@@ -1,3 +1,4 @@
+pystreamable
 discord.py
 python-dotenv
 requests
