@@ -31,6 +31,9 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
+    if message.author.id == bot.user.id:
+        return
+
     m = message.content
 
     if (re.search("http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", m)):
